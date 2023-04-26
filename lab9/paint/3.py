@@ -58,7 +58,7 @@ class Button(GameObject):
 
 class Pen(GameObject):
     def __init__(self, *args, **kwargs):  # Pen(1, 2, 3, a=4) =>
-        self.points: list[Point,] = []  # [(x1, y1), (x2, y2)]
+        self.points: list[Point, ] = []  # [(x1, y1), (x2, y2)]
 
     def draw(self):
         for idx, point in enumerate(self.points[:-1]):  # range(len(self.points))
